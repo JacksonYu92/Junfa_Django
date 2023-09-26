@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% load static %}
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <ol>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/home/#portfolio">Products</a></li>
+            </ol>
+            <h2>{{ product.name }}</h2>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+                {{ product.desc | safe }}
+   <div class="entry-footer">
+                            <i class="bi bi-folder"></i>
+                            <ul class="cats">
+                                <li><a href="/home/#portfolio">Products</a></li>
+                            </ul>
+
+                            <i class="bi bi-tags"></i>
+                            <ul class="tags">
+                                <li><a href="/home/#portfolio">energy-saving</a></li>
+                            </ul>
+                        </div>
+
+                    </article><!-- End blog entry -->
+
+                </div><!-- End blog entries list -->
+                <div class="col-lg-4">
+
+                    <div class="sidebar">
+
+                        <!-- <h3 class="sidebar-title">Search</h3> -->
+                        <div class="sidebar-item search-form">
+                            <form action="">
+                                <input type="text" class="form-control" id="searchMenu" onkeyup="searchMenuFunction()"
+                                       placeholder="Search Products">
+                                <!-- <button type="submit"><i class="bi bi-search"></i></button> -->
+                            </form>
+                        </div>
+
+                        <h3 class="sidebar-title">Feature Products：</h3>
+                        <div class="sidebar-item categories">
+                            <ul>
+                                <ul id="search-menu">
+                                    <li><a href="/products/1">Energy Saving Double Low-E Insulating
+                                        Glass Unit</a></li>
+                                    <li><a href="/products/2">Curved Tempered-glass,Curved
+                                        Laminated-glass,Curve</a></li>
+                                    <li><a href="/products/3">Safety and Energy Saving Laminated-glass(SGP、PVB)</a>
+                                    </li>
+                                    <li><a href="/products/4">Fully Tempered, Heat Strengthened Glass</a></li>
+                                    <li><a href="/products/5">Ceramic Frit Glass</a></li>
+                                    <li><a href="/products/7">Hollow Shatter Glass</a></li>
+                                    <li><a href="/products/8">Dimming Glass</a></li>
+                                    <li><a href="/products/9">Bullet Proof Glass</a></li>
+                                    <li><a href="/products/10">Fire Resistant Glass</a></li>
+                                    <li><a href="/products/11">Self-Cleaning Glass</a></li>
+                                </ul>
+                            </ul>
+                        </div><!-- End sidebar categories-->
+
+                    </div><!-- End sidebar -->
+
+                </div><!-- End blog sidebar -->
+
+            </div>
+
+        </div>
+    </section><!-- End Blog Single Section -->
+
+{% endblock %}

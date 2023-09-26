@@ -1,0 +1,274 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% load static %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#portfolio">About Us</a></li>
+        </ol>
+        <h2>Junfa Safety Glass Co., Ltd.</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Search Results</h3>
+          
+
+        </header>
+        
+        
+        <div id="search-results" class="text-center">
+          <p>Search results for: <span id="search-query"></span></p>
+          <p>Number of results: <span id="search-count"></span></p>
+        </div>
+
+        <!-- Portfolio items container -->
+        <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- Portfolio items will be dynamically added here -->
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit">
+              <a href="{% static 'img/portfolio/portfolio-1.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit"><i class="bi bi-plus"></i></a>
+              <a href="/products/1" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+            
+            <div class="portfolio-info">
+              <h4><a href="/products/1">Energy Saving</a></h4>
+              <p>Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="Curved Glass">
+              <a href="{% static 'img/portfolio/portfolio-2.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Curved Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/2" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/2">Curved Glass</a></h4>
+              <p>Curved tempered-glass, Curved laminated-glass, Curved sealed insulating-glass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="SGP,PVB">
+              <a href="{% static 'img/portfolio/portfolio-3.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="SGP,PVB"><i class="bi bi-plus"></i></a>
+              <a href="/products/3" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/3">SGP,PVB</a></h4>
+              <p>Safety and energy saving laminated-glass(SGP,PVB)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="Fully Tempered Glass">
+              <a href="{% static 'img/portfolio/portfolio-4.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fully Tempered Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/4" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/4">Fully Tempered Glass</a></h4>
+              <p>Fully tempered, Heat Strengthened glass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="Ceramic Frit Glass">
+              <a href="{% static 'img/portfolio/portfolio-5.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Ceramic Frit Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/5" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/5">Ceramic Frit Glass</a></h4>
+              <p>Durable tempered glass with vibrant inorganic color patterns, perfect for versatile applications</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-12.jpg' %}" class="img-fluid" alt="IGU">
+              <a href="{% static 'img/portfolio/portfolio-12.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="IGU"><i class="bi bi-plus"></i></a>
+              <a href="/products/6" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/6">IGU</a></h4>
+              <p>Insulating Glass Units(IGU), multi-layered glass with superior insulation and soundproofing for heightened comfort and energy savings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="Hollow Shatter Glass">
+              <a href="{% static 'img/portfolio/portfolio-6.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Hollow Shatter Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/7" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/7">Hollow Shatter Glass</a></h4>
+              <p>Innovative hollow shatter glass with built-in adjustable blinds for energy-efficient shading, noise reduction, and enhanced indoor comfort</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="Dimming Glass">
+              <a href="{% static 'img/portfolio/portfolio-7.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Dimming Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/8" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/8">Dimming Glass</a></h4>
+              <p>Innovative dimming glass, Control transparency using liquid crystals, offering privacy and projection capabilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="Bullet Proof Glass">
+              <a href="{% static 'img/portfolio/portfolio-8.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Bullet Proof Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/9" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/9">Bullet Proof Glass</a></h4>
+              <p>Security-enhancing bullet proof glass, Provides protection against ballistic threats while maintaining transparency</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="Fire Resistant Glass">
+              <a href="{% static 'img/portfolio/portfolio-9.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fire Resistant Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/10" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/10">Fire Resistant Glass</a></h4>
+              <p>ire-resistant glass, Safeguarding spaces by withstanding high temperatures and preventing the spread of fire while allowing visibility</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-10.jpg' %}" class="img-fluid" alt="Self-Cleaning Glass">
+              <a href="{% static 'img/portfolio/portfolio-10.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Self-Cleaning Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/11" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/11">Self-Cleaning Glass</a></h4>
+              <p>Low-maintenance solution with a special coating that repels dirt and liquids, suitable for homes, bathrooms, kitchens, and architecture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-11.jpg' %}" class="img-fluid" alt="Ceramic Frit Glass">
+              <a href="{% static 'img/portfolio/portfolio-11.jpg' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Ceramic Frit Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/12" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/12">Ceramic Frit Glass</a></h4>
+              <p>Durable tempered glass with vibrant inorganic color patterns, perfect for versatile applications</p>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+{% endblock %}
+{% block js %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var searchQueryElement = document.getElementById("search-query");
+  var searchCountElement = document.getElementById("search-count");
+  var portfolioContainer = document.querySelector(".portfolio-container");
+  var portfolioItems = Array.from(document.querySelectorAll(".portfolio-item"));
+
+  // Get the query parameter from the URL
+  var urlParams = new URLSearchParams(window.location.search);
+  var query = urlParams.get("query");
+
+  // Update the search query element
+  searchQueryElement.textContent = query;
+
+  // Filter and reorder portfolio items based on the query
+  var matchingItems = [];
+  var nonMatchingItems = [];
+
+  portfolioItems.forEach(item => {
+    var title = item.querySelector("h4").textContent.toLowerCase();
+    var description = item.querySelector("p").textContent.toLowerCase();
+    if (title.includes(query.toLowerCase()) || description.includes(query.toLowerCase())) {
+      matchingItems.push(item);
+    } else {
+      nonMatchingItems.push(item);
+    }
+  });
+
+  // Update the search count element
+  searchCountElement.textContent = matchingItems.length;
+
+  // Show matching items and hide non-matching items
+  matchingItems.forEach(item => item.classList.add("show"));
+  nonMatchingItems.forEach(item => item.classList.remove("show"));
+});
+
+  </script>
+{% endblock %}

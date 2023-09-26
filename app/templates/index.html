@@ -1,0 +1,784 @@
+{% extends 'layout_home.html' %}
+
+{% block content %}
+{% load static %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          
+          <!-- <h1 class="logo"><a href="/home/">BizPage</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="/home/" ><img src="{% static 'img/jfg-logo-1.png'%}" alt="" class="img-fluid"></a>
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li class="dropdown"><a href="#about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="/aboutus/">About us</a></li>
+                  <li><a href="/aboutus/#facts">Company Culture</a></li>
+                  <li><a href="/aboutus/#Equipment">Company Equipment</a></li>
+                  <li><a href="/aboutus/#project">Company Credentials</a></li>
+                </ul>
+              </li>
+              <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+              <li class="dropdown nav-link scrollto "><a href="#portfolio"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="/products/1">Energy Saving Double Low-E Insulating Glass Unit</a></li>
+                  <li><a href="/products/2">Curved Tempered-glass,Curved Laminated-glass,Curve</a></li>
+                  <li><a href="/products/3">Safety and Energy Saving Laminated-glass(SGP、PVB)</a></li>
+                  <li><a href="/products/4">Fully Tempered, Heat Strengthened Glass</a></li>
+                  <li><a href="/products/5">Ceramic Frit Glass</a></li>
+                  <li><a href="/products/7">Hollow Shatter Glass</a></li>
+                  <li><a href="/products/8">Dimming Glass</a></li>
+                  <li><a href="/products/9">Bullet Proof Glass</a></li>
+                  <li><a href="/products/10">Fire Resistant Glass</a></li>
+                  <li><a href="/products/11">Self-Cleaning Glass</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#project">Projects</a></li>
+              <li><a class="nav-link  " href="blog.html">News</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li class="search-box">
+                <form class="search-form" action="/results/" method="get">
+                  <input type="text" name="query" class="search-input" placeholder="Search...">
+                  <button type="submit" class="search-button"><i class="bi bi-search text-white"></i></button>
+                </form>
+              </li>
+              
+            </ul>
+            
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url({% static 'img/hero-carousel/hero-area-min.jpg'%})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Transforming Spaces with Innovative <br>Safety Glass Solutions</h2>
+                <p class="animate__animated animate__fadeInUp">In the future Junfa Glass will take efforts jointly with partners to enlarge the enterprise!</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url({% static 'img/hero-carousel/7.jpg'%})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Empowering with Green Energy</h2>
+                <p class="animate__animated animate__fadeInUp">Fusing Innovation and Sustainability in Green Energy Solutions.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url({% static 'img/hero-carousel/6.jpg'%})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Architectural Visions, Realized</h2>
+                <p class="animate__animated animate__fadeInUp">Shaping Skylines with Cutting-Edge Architectural Glass Solutions.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url({% static 'img/hero-carousel/8.jpg'%})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Glass Innovations Beyond Boundaries</h2>
+                <p class="animate__animated animate__fadeInUp">Pushing the Limits of Glass Technology for Diverse Applications.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="70000" style="background-image: url({% static 'img/hero-carousel/9.jpg'%})">
+            <video autoplay muted loop playsinline style="object-fit: cover; width: 100%; height: 100%;">
+              <source src="{% static 'img/hero-carousel/junfa.mp4'%}" type="video/mp4">
+              <!-- You can add more source elements for different video formats if needed -->
+              <!-- Your browser does not support the video tag. -->
+            </video>
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown animate__delay-5s">Glass Craftsmanship Redefined</h2>
+                <p class="animate__animated animate__fadeInUp animate__delay-5s">Junfa Glass: Redefining Craftsmanship in the Art of Glass Production.</p>
+                <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp animate__delay-5s">Explore Us</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section Section ======= -->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="bi bi-award"></i>
+            <h4 class="title"><a href="">We're Expertise</a></h4>
+            <p class="description">Backed by decades of experience, our team's professional knowledge ensures top-tier glass solutions.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="bi bi-globe-americas"></i>
+            <h4 class="title"><a href="">We're Sustainability</a></h4>
+            <p class="description">Our green initiatives showcase our commitment to environmentally responsible glass production.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="bi bi-eye"></i>
+            <h4 class="title"><a href="">We're Visionary</a></h4>
+            <p class="description">Guided by a clear vision, we consistently elevate architectural and safety glass standards.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>We're Engineering Safety through Glass Expertise</h3>
+          <p>We're Junfa Glass, a trailblazing force in the world of safety glass. Since our establishment in 1992, we've been relentlessly pushing boundaries to create glass solutions that go beyond expectations. From our state-of-the-art facilities in Jiangmen and Taishan, we engineer architectural glass, furniture glass, and specialized solutions that combine creativity and security<a href="/aboutus/">... More About Us</a></p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/about-mission.jpg'%}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                Our mission is to pioneer a new era of glass innovation driven by our commitment to safety, sustainability, and artistic excellence. We aspire to transform spaces through cutting-edge glass solutions that inspire awe, enhance security, and contribute to a greener future. Our dedication lies in pushing the boundaries of glass's potential while ensuring lasting impact and positive change in the architectural landscape.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/about-plan.jpg'%}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+                Junfa Glass is charting a path of innovation. We're leveraging technology, partnerships, and sustainability to redefine glass possibilities. By expanding capabilities, diversifying offerings, and fostering innovation, we're reshaping architecture and design. Quality, sustainability, and client satisfaction drive our commitment to set new industry standards and inspire architectural transformations.
+</p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static 'img/about-vision.jpg'%}" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                To be recognized globally as a trailblazer in glass craftsmanship and innovation. We aspire to reshape skylines, redefine aesthetics, and provide solutions that harmonize seamlessly with the environment. With a focus on green energy and security, we envision a world where Junfa Glass becomes synonymous with sustainable, secure, and stunning architectural transformations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container text-center" data-aos="zoom-in">
+        <h3>Great Design & Incredible Features</h3>
+        <p> Your Most Reliable Glass Processing Manufacturer</p>
+        <a class="cta-btn" href="#contact">Talk With Us</a>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+          <p>We have clients in over 25+ countries!</p>
+        </header>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="13645" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="138" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+        <div class="facts-img">
+          <img src="{% static 'img/facts-img-min.png'%}" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Products</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100"">
+      <div class=" col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li id="energy-glass" data-filter=".filter-energy">Energy Efficiency Glass</li>
+            <li data-filter=".filter-design">Functional Specialty Glass</li>
+            <li data-filter=".filter-safety">Security Glass Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-1.jpg'%}" class="img-fluid" alt="Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit">
+              <a href="{% static 'img/portfolio/portfolio-1.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit"><i class="bi bi-plus"></i></a>
+              <a href="/products/1" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+            
+            <div class="portfolio-info">
+              <h4><a href="/products/1">Energy Saving</a></h4>
+              <p>Energy Saving Single Low-E, Double Low-E, Triple Low-E Insulating Glass Unit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-2.jpg'%}" class="img-fluid" alt="Curved Glass">
+              <a href="{% static 'img/portfolio/portfolio-2.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Curved Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/2" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/2">Curved Glass</a></h4>
+              <p>Curved tempered-glass, Curved laminated-glass, Curved sealed insulating-glass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="SGP,PVB">
+              <a href="{% static 'img/portfolio/portfolio-3.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="SGP,PVB"><i class="bi bi-plus"></i></a>
+              <a href="/products/3" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/3">SGP,PVB</a></h4>
+              <p>Safety and energy saving laminated-glass(SGP,PVB)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-4.jpg'%}" class="img-fluid" alt="Fully Tempered Glass">
+              <a href="{% static 'img/portfolio/portfolio-4.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fully Tempered Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/4" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/4">Fully Tempered Glass</a></h4>
+              <p>Fully tempered, Heat Strengthened glass</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-5.jpg'%}" class="img-fluid" alt="Ceramic Frit Glass">
+              <a href="{% static 'img/portfolio/portfolio-5.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Ceramic Frit Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/5" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/5">Ceramic Frit Glass</a></h4>
+              <p>Durable tempered glass with vibrant inorganic color patterns, perfect for versatile applications</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-energy">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-12.jpg'%}" class="img-fluid" alt="IGU">
+              <a href="{% static 'img/portfolio/portfolio-12.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="IGU"><i class="bi bi-plus"></i></a>
+              <a href="/products/6" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/6">IGU</a></h4>
+              <p>Insulating Glass Units(IGU), multi-layered glass with superior insulation and soundproofing for heightened comfort and energy savings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-6.jpg'%}" class="img-fluid" alt="Hollow Shatter Glass">
+              <a href="{% static 'img/portfolio/portfolio-6.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Hollow Shatter Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/7" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/7">Hollow Shatter Glass</a></h4>
+              <p>Innovative hollow shatter glass with built-in adjustable blinds for energy-efficient shading, noise reduction, and enhanced indoor comfort</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-7.jpg'%}" class="img-fluid" alt="Dimming Glass">
+              <a href="{% static 'img/portfolio/portfolio-7.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Dimming Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/8" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/8">Dimming Glass</a></h4>
+              <p>Innovative dimming glass, Control transparency using liquid crystals, offering privacy and projection capabilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-8.jpg'%}" class="img-fluid" alt="Bullet Proof Glass">
+              <a href="{% static 'img/portfolio/portfolio-8.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Bullet Proof Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/9" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/9">Bullet Proof Glass</a></h4>
+              <p>Security-enhancing bullet proof glass, Provides protection against ballistic threats while maintaining transparency</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-safety">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-9.jpg'%}" class="img-fluid" alt="Fire Resistant Glass">
+              <a href="{% static 'img/portfolio/portfolio-9.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fire Resistant Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/10" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/10">Fire Resistant Glass</a></h4>
+              <p>ire-resistant glass, Safeguarding spaces by withstanding high temperatures and preventing the spread of fire while allowing visibility</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-10.jpg'%}" class="img-fluid" alt="Self-Cleaning Glass">
+              <a href="{% static 'img/portfolio/portfolio-10.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Self-Cleaning Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/11" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/11">Self-Cleaning Glass</a></h4>
+              <p>Low-maintenance solution with a special coating that repels dirt and liquids, suitable for homes, bathrooms, kitchens, and architecture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'img/portfolio/portfolio-11.jpg'%}" class="img-fluid" alt="Ceramic Frit Glass">
+              <a href="{% static 'img/portfolio/portfolio-11.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Ceramic Frit Glass"><i class="bi bi-plus"></i></a>
+              <a href="/products/12" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="/products/12">Ceramic Frit Glass</a></h4>
+              <p>Durable tempered glass with vibrant inorganic color patterns, perfect for versatile applications</p>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'img/clients/wanda.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/days-hotel.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/Crimson Hotel.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/Jiangmen Center Hospital.jpg'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/Horlzon Hotel.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/Hotel Sentral.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/Red Planet.png'%}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonial-1.jpg'%}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Building Contractor</h4>
+                <p>
+                  <img src="{% static 'img/quote-sign-left.png'%}" class="quote-sign-left" alt="">
+                  Working with Junfa Glass has been a game-changer for our construction projects. Their innovative glass solutions, like self-cleaning and fire-resistant glass, provide added value to our clients. Their professionalism and reliability make them an integral part of our team.
+                  <img src="{% static 'img/quote-sign-right.png'%}" class="quote-sign-right" alt="">
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonial-2.jpg'%}" class="testimonial-img" alt="">
+                <h3>Sarah Chen</h3>
+                <h4>Architect</h4>
+                <p>
+                  <img src="{% static 'img/quote-sign-left.png'%}" class="quote-sign-left" alt="">
+                  Junfa Safety Glass is my go-to choice for architectural glass solutions. Their diverse range of glass types and commitment to quality never fail to impress. They understand the unique demands of each project and consistently deliver excellence.
+                  <img src="{% static 'img/quote-sign-right.png'%}" class="quote-sign-right" alt="">
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonial-3.jpg'%}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Interior Designer</h4>
+                <p>
+                  <img src="{% static 'img/quote-sign-left.png'%}" class="quote-sign-left" alt="">
+                  Junfa Safety Glass brings my design visions to life with their customizable glass options. From curved tempered glass to intricate frit designs, they ensure that the glass complements the aesthetics and functionality of the spaces I create.
+                  <img src="{% static 'img/quote-sign-right.png'%}" class="quote-sign-right" alt="">
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonial-4.jpg'%}" class="testimonial-img" alt="">
+                <h3>Brandon Wu</h3>
+                <h4>Property Developer</h4>
+                <p>
+                  <img src="{% static 'img/quote-sign-left.png'%}" class="quote-sign-left" alt="">
+                  Junfa Safety Glass has been instrumental in making our properties stand out. Their energy-saving glass solutions have not only enhanced the buildings' performance but also contributed to our green initiatives. Their technical expertise and dedication to quality are unparalleled.
+                  <img src="{% static 'img/quote-sign-right.png'%}" class="quote-sign-right" alt="">
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'img/testimonial-5.jpg'%}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Project Manager</h4>
+                <p>
+                  <img src="{% static 'img/quote-sign-left.png'%}" class="quote-sign-left" alt="">
+                  Working with Junfa Glass has been smooth sailing. Their consistent quality and timely deliveries have greatly streamlined our projects. They're a reliable partner in the construction industry.
+                  <img src="{% static 'img/quote-sign-right.png'%}" class="quote-sign-right" alt="">
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= project Section ======= -->
+    <section id="project">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Our Project</h3>
+          <p>Explore our showcase of innovative glass solutions that have transformed spaces and exceeded expectations.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <img src="{% static 'img/project/foshanwanda-min.jpg'%}" class="img-fluid" alt="Foshan Wanda Plaza">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Foshan Wanda Plaza</h4>
+                  <span>Low-E IGU, ceramic firt, laminated 10000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/foshanwanda-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Foshan Wanda Plaza"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <img src="{% static 'img/project/jiangmenwanda-min.jpg'%}" class="img-fluid" alt="Jiangmen Wanda Plaza">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jiangmen Wanda Plaza</h4>
+                  <span>Low-E IGU, laminated 10000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/jiangmenwanda-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Jiangmen Wanda Plaza"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <img src="{% static 'img/project/foshanwanlong-min.jpg'%}" class="img-fluid" alt="Foshan Wanlong International Square">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Foshan Wanlong International Square</h4>
+                  <span>Low-E IGU, laminated 110000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/foshanwanlong-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Foshan Wanlong International Square"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="{% static 'img/project/xinhuilongquan-min.jpg'%}" class="img-fluid" alt="Xinhui Longquan Hotel">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Xinhui Longquan Hotel</h4>
+                  <span>Low-E IGU, laminated 10000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/xinhuilongquan-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Xinhui Longquan Hotel"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="500">
+              <img src="{% static 'img/project/jiangmendonghu-min.jpg'%}" class="img-fluid" alt="Jiangmen East Lake Condo">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jiangmen East Lake Condo</h4>
+                  <span>Low-E IGU 10000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/jiangmendonghu-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Jiangmen East Lake Condo"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="500">
+              <img src="{% static 'img/project/jiangmenzhongxinyiyuan-min.jpg'%}" class="img-fluid" alt="Jiangmen Center Hospital">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jiangmen Center Hospital</h4>
+                  <span>Low-E IGU,Curved laminated 8000m<sup>2</sup></span>
+                  <div class="social">
+                    <a href="{% static 'img/project/jiangmenzhongxinyiyuan-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Jiangmen Center Hospital"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="500">
+              <img src="{% static 'img/project/mnilacrimsonhotel-min.jpg'%}" class="img-fluid" alt="Crimson Hotel">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Crimson Hotel</h4>
+                  <span>Crimson Hotel Filinvest City, Manila, Philippines</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/mnilacrimsonhotel-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Crimson Hotel"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="600">
+              <img src="{% static 'img/project/geohotelkualalumpur-min.jpg'%}" class="img-fluid" alt="Geo Hotel">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Geo Hotel</h4>
+                  <span>Geo Hotel Kuala Lumpur, Malaysia</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/geohotelkualalumpur-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Geo Hotel"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="{% static 'img/project/dayshotel-min.jpg'%}" class="img-fluid" alt="Days Hotel">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Days Hotel</h4>
+                  <span>Days Hotel Wyndham, Singapore</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/dayshotel-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Days Hotel"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="{% static 'img/project/horlzonhotel-min.jpg'%}" class="img-fluid" alt="Horlzon Hotel">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Horlzon Hotel</h4>
+                  <span>Horizon Hotel Kota Kinabalu, Sabah, Malaysia</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/horlzonhotel-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Horlzon Hotel"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="{% static 'img/project/hotelsentral-min.jpg'%}" class="img-fluid" alt="Hotel Sentral">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Hotel Sentral</h4>
+                  <span>Hotel Sentral Kuala Lumpur, Malaysia</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/hotelsentral-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Hotel Sentral"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <img src="{% static 'img/project/redplanet-min.jpg'%}" class="img-fluid" alt="Red Planet">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Red Planet</h4>
+                  <span>Red Planet Manila Aseana City, Manila, Philippines</span>
+                  <div class="social">
+                    <a href="{% static 'img/project/redplanet-min.jpg'%}" class="link-preview portfolio-lightbox" data-gallery="projectGallery" title="Red Planet"><i class="bi bi-search"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End project Section -->
+
+ {% endblock %}
